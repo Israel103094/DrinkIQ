@@ -1,0 +1,206 @@
+[
+  {
+    "id": "ed001",
+    "name": "Sting",
+    "imageLink": "https://img.lazcdn.com/g/p/b9d399c984c736f041ca8d17fcac54f8.jpg_720x720q80.jpg",
+    "volume": {
+      "amount": 355,
+      "unit": "ml"
+    },
+    "caffeineContent": {
+      "amount": 50,
+      "unit": "mg"
+    },
+    "sugar": {
+      "amount": 35,
+      "unit": "g"
+    },
+    "ingredients": [
+      "Carbonated Water",
+      "Sucrose (Sugar)",
+      "Citric Acid",
+      "Caffeine",
+      "Taurine",
+      "Sodium Benzoate (Preservative)",
+      "Artificial Flavors",
+      "Food Coloring (varies by flavor)",
+      "B Vitamins (e.g., B3, B6, B12)"
+    ],
+    "healthRisks": [
+      "High caffeine content may cause anxiety and increased heart rate",
+      "Excessive sugar content may contribute to dental problems",
+      "Not recommended for children, pregnant women, or caffeine-sensitive individuals",
+      "May cause insomnia if consumed late in the day"
+    ]
+  },
+  {
+    "id": "ed002",
+    "name": "Mountain Dew",
+    "imageLink": "https://amici.ph/cdn/shop/products/mountain-dew-can_1200x.jpg?v=1518899296",
+    "volume": {
+      "amount": 355,
+      "unit": "ml"
+    },
+    "caffeineContent": {
+      "amount": 54,
+      "unit": "mg"
+    },
+    "sugar": {
+      "amount": 46,
+      "unit": "g"
+    },
+    "ingredients": [
+      "Carbonated Water",
+      "High Fructose Corn Syrup (or Sugar, depending on region)",
+      "Citric Acid",
+      "Natural and Artificial Flavors",
+      "Sodium Benzoate (Preservative)",
+      "Caffeine",
+      "Sodium Citrate",
+      "Gum Arabic",
+      "Yellow 5 (Food Coloring)"
+    ],
+    "healthRisks": [
+      "High caffeine content may cause anxiety and increased heart rate",
+      "Excessive sugar content may contribute to dental problems",
+      "Not recommended for children, pregnant women, or caffeine-sensitive individuals",
+      "May cause insomnia if consumed late in the day"
+    ]
+  },
+  {
+    "id": "ed003",
+    "name": "Cobra",
+    "imageLink": "https://asiabrewery.com/cdn/shop/files/Orig.jpg?v=1716191578",
+    "volume": {
+      "amount": 240,
+      "unit": "ml"
+    },
+    "caffeineContent": {
+      "amount": 80,
+      "unit": "mg"
+    },
+    "sugar": {
+      "amount": 26,
+      "unit": "g"
+    },
+    "ingredients": [
+      "Carbonated Water",
+      "Sucrose (Sugar)",
+      "Citric Acid",
+      "Caffeine",
+      "Taurine",
+      "Inositol",
+      "Sodium Benzoate (Preservative)",
+      "B Vitamins (B3, B6, B12)",
+      "Artificial Flavors"
+    ],
+    "healthRisks": [
+      "High caffeine content may cause anxiety and increased heart rate",
+      "Excessive sugar content may contribute to dental problems",
+      "Not recommended for children, pregnant women, or caffeine-sensitive individuals",
+      "May cause insomnia if consumed late in the day"
+    ]
+  },
+  {
+    "id": "ed004",
+    "name": "Coca-Cola (Coke)",
+    "imageLink": "https://img.freepik.com/premium-photo/cocacola-vector-logo-isolated-background_1258715-16935.jpg?semt=ais_hybrid",
+    "volume": {
+      "amount": 355,
+      "unit": "ml"
+    },
+    "caffeineContent": {
+      "amount": 34,
+      "unit": "mg"
+    },
+    "sugar": {
+      "amount": 39,
+      "unit": "g"
+    },
+    "ingredients": [
+      "Carbonated Water",
+      "High Fructose Corn Syrup (or Sugar, depending on region)",
+      "Caramel Color",
+      "Phosphoric Acid",
+      "Natural Flavors (including Coca-Cola’s secret formula)",
+      "Caffeine",
+      "Sodium Citrate",
+      "Citric Acid",
+      "Sodium Benzoate (Preservative)"
+    ],
+    "healthRisks": [
+      "High caffeine content may cause anxiety and increased heart rate",
+      "Excessive sugar content may contribute to dental problems",
+      "Not recommended for children, pregnant women, or caffeine-sensitive individuals",
+      "May cause insomnia if consumed late in the day"
+    ]
+  },
+  {
+    "id": "ed005",
+    "name": "Red Bull",
+    "imageLink": "https://spice-world.co.za/cdn/shop/products/3520_648ad722263c64.28810246_drinks_20copy_1db265d5-e818-45d3-973b-3e046a6b0931_800x.jpg?v=1697124785",
+    "volume": {
+      "amount": 250,
+      "unit": "ml"
+    },
+    "caffeineContent": {
+      "amount": 80,
+      "unit": "mg"
+    },
+    "sugar": {
+      "amount": 27,
+      "unit": "g"
+    },
+    "ingredients": [
+      "Carbonated Water",
+      "Sucrose (Sugar)",
+      "Glucose",
+      "Citric Acid",
+      "Taurine",
+      "Caffeine",
+      "Sodium Bicarbonate",
+      "Magnesium Carbonate",
+      "B Vitamins (B3, B5, B6, B12)"
+    ],
+    "healthRisks": [
+      "High caffeine content may cause anxiety and increased heart rate",
+      "Excessive sugar content may contribute to dental problems",
+      "Not recommended for children, pregnant women, or caffeine-sensitive individuals",
+      "May cause insomnia if consumed late in the day"
+    ]
+  },
+  {
+    "id": "ed007",
+    "name": "Pepsi",
+    "imageLink": "https://3mpizza.ph/cdn/shop/files/pepsiincan_1200x1200.jpg?v=1726040836",
+    "volume": {
+      "amount": 355,
+      "unit": "ml"
+    },
+    "caffeineContent": {
+      "amount": 38,
+      "unit": "mg"
+    },
+    "sugar": {
+      "amount": 41,
+      "unit": "g"
+    },
+    "ingredients": [
+      "Carbonated Water",
+      "High Fructose Corn Syrup (or Sugar, depending on region)",
+      "Caramel Color",
+      "Phosphoric Acid",
+      "Caffeine",
+      "Citric Acid",
+      "Natural Flavors",
+      "Sodium Benzoate (Preservative)",
+      "Aspartame (in diet versions)"
+    ],
+    "healthRisks": [
+      "High caffeine content may cause anxiety and increased heart rate",
+      "Excessive sugar content may contribute to dental problems",
+      "Not recommended for children, pregnant women, or caffeine-sensitive individuals",
+      "May cause insomnia if consumed late in the day"
+    ]
+  }
+]
