@@ -2,6 +2,11 @@
   "form": [
     {
       "id": "caffeine_frequency",
+      "name": "Caffeine Frequency",
+      "header": "How often do you consume caffeine?",
+      "sub_question": "Understanding your caffeine habits helps us tailor recommendations.",
+      "footer": "Why we ask this",
+      "sub_footer": "Your caffeine consumption patterns help us suggest adjustments for better health.",
       "type": "multiple_choice",
       "selection_type": "single",
       "question": "How often do you consume caffeine?",
@@ -10,6 +15,11 @@
         "Daily": [
           {
             "id": "caffeine_sources",
+            "name": "Caffeine Sources",
+            "header": "What are your primary sources of caffeine?",
+            "sub_question": "This helps us understand your caffeine intake sources.",
+            "footer": "",
+            "sub_footer": "",
             "type": "multiple_choice",
             "selection_type": "multiple",
             "question": "What are your primary sources of caffeine?",
@@ -17,6 +27,11 @@
           },
           {
             "id": "caffeine_timing",
+            "name": "Caffeine Timing",
+            "header": "When do you usually consume caffeine?",
+            "sub_question": "This helps us understand your daily caffeine routine.",
+            "footer": "",
+            "sub_footer": "",
             "type": "multiple_choice",
             "selection_type": "multiple",
             "question": "When do you usually consume caffeine?",
@@ -24,6 +39,11 @@
           },
           {
             "id": "caffeine_quantity",
+            "name": "Caffeine Quantity",
+            "header": "How much caffeine do you consume daily?",
+            "sub_question": "This helps us gauge your caffeine intake levels.",
+            "footer": "",
+            "sub_footer": "",
             "type": "multiple_choice",
             "selection_type": "single",
             "question": "Approximately how much caffeine do you consume per day?",
@@ -32,198 +52,318 @@
         ]
       }
     },
-   {
-  "id": "health_conditions",
-  "type": "multiple_choice",
-  "selection_type": "multiple",
-  "question": "Do you have any of the following health conditions?",
-  "options": [
-    "Anxiety",
-    "Heart Disease",
-    "High Blood Pressure",
-    "Diabetes",
-    "Insomnia",
-    "Gastritis",
-    "Migraines",
-    "Kidney Issues",
-    "Acid Reflux",
-    "None"
-  ],
-  "follow_up": {
-    "Anxiety": [
-      {
-        "id": "anxiety_severity",
-        "type": "scale",
-        "question": "How severe is your anxiety on a scale of 1 to 10?",
-        "options": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-      },
-      {
-        "id": "anxiety_caffeine_sensitivity",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "Does caffeine (coffee or energy drinks) make your anxiety worse?",
-        "options": ["Yes", "No", "Not Sure"]
+    {
+      "id": "health_conditions",
+      "name": "Health Conditions",
+      "header": "Do you have any of these health conditions?",
+      "sub_question": "This helps us provide safe recommendations tailored to your health needs.",
+      "footer": "Why we need this information",
+      "sub_footer": "Your health conditions help us avoid recommending activities or habits that might be harmful for your specific situation.",
+      "type": "multiple_choice",
+      "selection_type": "multiple",
+      "question": "Do you have any of the following health conditions?",
+      "options": [
+        "Anxiety",
+        "Heart Disease",
+        "High Blood Pressure",
+        "Diabetes",
+        "Insomnia",
+        "Gastritis",
+        "Migraines",
+        "Kidney Issues",
+        "Acid Reflux",
+        "None"
+      ],
+      "follow_up": {
+        "Anxiety": [
+          {
+            "id": "anxiety_severity",
+            "name": "Anxiety Severity",
+            "header": "How severe is your anxiety?",
+            "sub_question": "This helps us understand the impact of anxiety on your daily life.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "scale",
+            "question": "How severe is your anxiety on a scale of 1 to 10?",
+            "options": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          },
+          {
+            "id": "anxiety_caffeine_sensitivity",
+            "name": "Anxiety Caffeine Sensitivity",
+            "header": "Does caffeine affect your anxiety?",
+            "sub_question": "This helps us understand how caffeine impacts your anxiety.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "Does caffeine (coffee or energy drinks) make your anxiety worse?",
+            "options": ["Yes", "No", "Not Sure"]
+          }
+        ],
+        "Heart Disease": [
+          {
+            "id": "heart_disease_medication",
+            "name": "Heart Disease Medication",
+            "header": "Are you taking medication for heart disease?",
+            "sub_question": "This helps us understand your current treatment plan.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "Are you taking any medication for heart disease?",
+            "options": ["Yes", "No"]
+          },
+          {
+            "id": "heart_disease_caffeine_intake",
+            "name": "Heart Disease Caffeine Intake",
+            "header": "How often do you consume caffeine?",
+            "sub_question": "This helps us understand your caffeine habits with heart disease.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "How often do you consume coffee or energy drinks?",
+            "options": ["Daily", "Occasionally", "Rarely", "Never"]
+          },
+          {
+            "id": "heart_disease_caffeine_effects",
+            "name": "Heart Disease Caffeine Effects",
+            "header": "Have you experienced symptoms after consuming caffeine?",
+            "sub_question": "This helps us understand how caffeine affects your heart health.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "multiple",
+            "question": "Have you experienced any of these symptoms after consuming caffeine?",
+            "options": ["Rapid heartbeat", "Chest pain", "Shortness of breath", "None"]
+          }
+        ],
+        "High Blood Pressure": [
+          {
+            "id": "bp_medication",
+            "name": "Blood Pressure Medication",
+            "header": "Are you taking medication for high blood pressure?",
+            "sub_question": "This helps us understand your current treatment plan.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "Are you taking any medication for high blood pressure?",
+            "options": ["Yes", "No"]
+          },
+          {
+            "id": "bp_caffeine_consumption",
+            "name": "Blood Pressure Caffeine Consumption",
+            "header": "How often do you consume caffeine?",
+            "sub_question": "This helps us understand your caffeine habits with high blood pressure.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "How often do you consume coffee or energy drinks?",
+            "options": ["Daily", "Occasionally", "Rarely", "Never"]
+          },
+          {
+            "id": "bp_caffeine_effects",
+            "name": "Blood Pressure Caffeine Effects",
+            "header": "Have you noticed symptoms after consuming caffeine?",
+            "sub_question": "This helps us understand how caffeine affects your blood pressure.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "multiple",
+            "question": "Have you noticed any of these symptoms after consuming caffeine?",
+            "options": ["Increased blood pressure", "Dizziness", "Headache", "None"]
+          }
+        ],
+        "Diabetes": [
+          {
+            "id": "diabetes_medication",
+            "name": "Diabetes Medication",
+            "header": "Are you taking medication for diabetes?",
+            "sub_question": "This helps us understand your current treatment plan.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "Are you taking any medication for diabetes?",
+            "options": ["Yes", "No"]
+          },
+          {
+            "id": "diabetes_sugar_intake",
+            "name": "Diabetes Sugar Intake",
+            "header": "Do you consume sugary energy drinks?",
+            "sub_question": "This helps us understand your sugar intake habits.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "Do you consume energy drinks that contain sugar?",
+            "options": ["Yes", "No", "Not Sure"]
+          },
+          {
+            "id": "diabetes_caffeine_effects",
+            "name": "Diabetes Caffeine Effects",
+            "header": "Have you noticed effects after consuming caffeine?",
+            "sub_question": "This helps us understand how caffeine affects your diabetes.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "multiple",
+            "question": "Have you noticed any of these effects after consuming caffeine?",
+            "options": ["Blood sugar fluctuations", "Increased thirst", "Fatigue", "None"]
+          }
+        ],
+        "Insomnia": [
+          {
+            "id": "insomnia_severity",
+            "name": "Insomnia Severity",
+            "header": "How severe is your insomnia?",
+            "sub_question": "This helps us understand the impact of insomnia on your sleep.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "scale",
+            "question": "How severe is your insomnia on a scale of 1 to 10?",
+            "options": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          },
+          {
+            "id": "insomnia_caffeine_consumption",
+            "name": "Insomnia Caffeine Consumption",
+            "header": "Do you consume caffeine in the evening?",
+            "sub_question": "This helps us understand your caffeine habits related to sleep.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "Do you consume caffeine (coffee or energy drinks) in the evening?",
+            "options": ["Yes", "No", "Sometimes"]
+          },
+          {
+            "id": "insomnia_caffeine_impact",
+            "name": "Insomnia Caffeine Impact",
+            "header": "Does caffeine affect your sleep quality?",
+            "sub_question": "This helps us understand how caffeine impacts your sleep.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "Do you believe caffeine affects your sleep quality?",
+            "options": ["Yes", "No", "Not Sure"]
+          }
+        ],
+        "Gastritis": [
+          {
+            "id": "gastritis_caffeine_impact",
+            "name": "Gastritis Caffeine Impact",
+            "header": "Does caffeine trigger your gastritis symptoms?",
+            "sub_question": "This helps us understand how caffeine affects your gastritis.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "Does caffeine (coffee or energy drinks) trigger your gastritis symptoms?",
+            "options": ["Yes", "No", "Not Sure"]
+          },
+          {
+            "id": "gastritis_symptoms",
+            "name": "Gastritis Symptoms",
+            "header": "What symptoms do you experience after consuming caffeine?",
+            "sub_question": "This helps us understand how caffeine impacts your gastritis.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "multiple",
+            "question": "What symptoms do you experience after consuming caffeine?",
+            "options": ["Stomach pain", "Nausea", "Heartburn", "None"]
+          }
+        ],
+        "Migraines": [
+          {
+            "id": "migraines_caffeine_relation",
+            "name": "Migraines Caffeine Relation",
+            "header": "Does caffeine trigger or relieve your migraines?",
+            "sub_question": "This helps us understand how caffeine affects your migraines.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "Does caffeine trigger or relieve your migraines?",
+            "options": ["Triggers", "Relieves", "No effect", "Not Sure"]
+          },
+          {
+            "id": "migraines_caffeine_frequency",
+            "name": "Migraines Caffeine Frequency",
+            "header": "How often do you consume caffeine?",
+            "sub_question": "This helps us understand your caffeine habits related to migraines.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "How often do you consume caffeine?",
+            "options": ["Daily", "Occasionally", "Rarely", "Never"]
+          }
+        ],
+        "Kidney Issues": [
+          {
+            "id": "kidney_caffeine_intake",
+            "name": "Kidney Caffeine Intake",
+            "header": "Do you consume caffeine despite kidney issues?",
+            "sub_question": "This helps us understand your caffeine habits with kidney issues.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "Do you consume a lot of caffeine despite having kidney issues?",
+            "options": ["Yes", "No"]
+          },
+          {
+            "id": "kidney_caffeine_effects",
+            "name": "Kidney Caffeine Effects",
+            "header": "Have you experienced symptoms after consuming caffeine?",
+            "sub_question": "This helps us understand how caffeine affects your kidney health.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "multiple",
+            "question": "Have you experienced any of these symptoms after consuming caffeine?",
+            "options": ["Increased urination", "Dehydration", "Kidney pain", "None"]
+          }
+        ],
+        "Acid Reflux": [
+          {
+            "id": "acid_reflux_caffeine_triggers",
+            "name": "Acid Reflux Caffeine Triggers",
+            "header": "Does caffeine worsen your acid reflux?",
+            "sub_question": "This helps us understand how caffeine affects your acid reflux.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "single",
+            "question": "Does caffeine worsen your acid reflux?",
+            "options": ["Yes", "No", "Not Sure"]
+          },
+          {
+            "id": "acid_reflux_symptoms",
+            "name": "Acid Reflux Symptoms",
+            "header": "What symptoms do you experience after consuming caffeine?",
+            "sub_question": "This helps us understand how caffeine impacts your acid reflux.",
+            "footer": "",
+            "sub_footer": "",
+            "type": "multiple_choice",
+            "selection_type": "multiple",
+            "question": "What symptoms do you experience after consuming caffeine?",
+            "options": ["Heartburn", "Chest pain", "Regurgitation", "None"]
+          }
+        ]
       }
-    ],
-    "Heart Disease": [
-      {
-        "id": "heart_disease_medication",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "Are you taking any medication for heart disease?",
-        "options": ["Yes", "No"]
-      },
-      {
-        "id": "heart_disease_caffeine_intake",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "How often do you consume coffee or energy drinks?",
-        "options": ["Daily", "Occasionally", "Rarely", "Never"]
-      },
-      {
-        "id": "heart_disease_caffeine_effects",
-        "type": "multiple_choice",
-        "selection_type": "multiple",
-        "question": "Have you experienced any of these symptoms after consuming caffeine?",
-        "options": ["Rapid heartbeat", "Chest pain", "Shortness of breath", "None"]
-      }
-    ],
-    "High Blood Pressure": [
-      {
-        "id": "bp_medication",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "Are you taking any medication for high blood pressure?",
-        "options": ["Yes", "No"]
-      },
-      {
-        "id": "bp_caffeine_consumption",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "How often do you consume coffee or energy drinks?",
-        "options": ["Daily", "Occasionally", "Rarely", "Never"]
-      },
-      {
-        "id": "bp_caffeine_effects",
-        "type": "multiple_choice",
-        "selection_type": "multiple",
-        "question": "Have you noticed any of these symptoms after consuming caffeine?",
-        "options": ["Increased blood pressure", "Dizziness", "Headache", "None"]
-      }
-    ],
-    "Diabetes": [
-      {
-        "id": "diabetes_medication",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "Are you taking any medication for diabetes?",
-        "options": ["Yes", "No"]
-      },
-      {
-        "id": "diabetes_sugar_intake",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "Do you consume energy drinks that contain sugar?",
-        "options": ["Yes", "No", "Not Sure"]
-      },
-      {
-        "id": "diabetes_caffeine_effects",
-        "type": "multiple_choice",
-        "selection_type": "multiple",
-        "question": "Have you noticed any of these effects after consuming caffeine?",
-        "options": ["Blood sugar fluctuations", "Increased thirst", "Fatigue", "None"]
-      }
-    ],
-    "Insomnia": [
-      {
-        "id": "insomnia_severity",
-        "type": "scale",
-        "question": "How severe is your insomnia on a scale of 1 to 10?",
-        "options": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-      },
-      {
-        "id": "insomnia_caffeine_consumption",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "Do you consume caffeine (coffee or energy drinks) in the evening?",
-        "options": ["Yes", "No", "Sometimes"]
-      },
-      {
-        "id": "insomnia_caffeine_impact",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "Do you believe caffeine affects your sleep quality?",
-        "options": ["Yes", "No", "Not Sure"]
-      }
-    ],
-    "Gastritis": [
-      {
-        "id": "gastritis_caffeine_impact",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "Does caffeine (coffee or energy drinks) trigger your gastritis symptoms?",
-        "options": ["Yes", "No", "Not Sure"]
-      },
-      {
-        "id": "gastritis_symptoms",
-        "type": "multiple_choice",
-        "selection_type": "multiple",
-        "question": "What symptoms do you experience after consuming caffeine?",
-        "options": ["Stomach pain", "Nausea", "Heartburn", "None"]
-      }
-    ],
-    "Migraines": [
-      {
-        "id": "migraines_caffeine_relation",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "Does caffeine trigger or relieve your migraines?",
-        "options": ["Triggers", "Relieves", "No effect", "Not Sure"]
-      },
-      {
-        "id": "migraines_caffeine_frequency",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "How often do you consume caffeine?",
-        "options": ["Daily", "Occasionally", "Rarely", "Never"]
-      }
-    ],
-    "Kidney Issues": [
-      {
-        "id": "kidney_caffeine_intake",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "Do you consume a lot of caffeine despite having kidney issues?",
-        "options": ["Yes", "No"]
-      },
-      {
-        "id": "kidney_caffeine_effects",
-        "type": "multiple_choice",
-        "selection_type": "multiple",
-        "question": "Have you experienced any of these symptoms after consuming caffeine?",
-        "options": ["Increased urination", "Dehydration", "Kidney pain", "None"]
-      }
-    ],
-    "Acid Reflux": [
-      {
-        "id": "acid_reflux_caffeine_triggers",
-        "type": "multiple_choice",
-        "selection_type": "single",
-        "question": "Does caffeine worsen your acid reflux?",
-        "options": ["Yes", "No", "Not Sure"]
-      },
-      {
-        "id": "acid_reflux_symptoms",
-        "type": "multiple_choice",
-        "selection_type": "multiple",
-        "question": "What symptoms do you experience after consuming caffeine?",
-        "options": ["Heartburn", "Chest pain", "Regurgitation", "None"]
-      }
-    ]
-  }
-},
+    },
     {
       "id": "symptoms",
+      "name": "Symptoms",
+      "header": "Have you experienced any of these symptoms?",
+      "sub_question": "This helps us understand how caffeine might be affecting you.",
+      "footer": "",
+      "sub_footer": "",
       "type": "multiple_choice",
       "selection_type": "multiple",
       "question": "Have you experienced any of the following symptoms?",
@@ -231,6 +371,11 @@
     },
     {
       "id": "lifestyle_factors",
+      "name": "Lifestyle Factors",
+      "header": "How would you describe your stress levels?",
+      "sub_question": "This helps us understand how stress might be impacting your health.",
+      "footer": "",
+      "sub_footer": "",
       "type": "multiple_choice",
       "selection_type": "single",
       "question": "How would you describe your stress levels?",
@@ -238,6 +383,11 @@
     },
     {
       "id": "sleep_patterns",
+      "name": "Sleep Patterns",
+      "header": "How many hours of sleep do you get per night?",
+      "sub_question": "This helps us understand your sleep habits.",
+      "footer": "",
+      "sub_footer": "",
       "type": "multiple_choice",
       "selection_type": "single",
       "question": "How many hours of sleep do you get per night?",
@@ -245,6 +395,11 @@
     },
     {
       "id": "physical_activity",
+      "name": "Physical Activity",
+      "header": "How often do you engage in physical activity?",
+      "sub_question": "This helps us understand your activity levels.",
+      "footer": "",
+      "sub_footer": "",
       "type": "multiple_choice",
       "selection_type": "single",
       "question": "How often do you engage in physical activity?",
@@ -252,6 +407,11 @@
     },
     {
       "id": "goals",
+      "name": "Goals",
+      "header": "What are your primary goals?",
+      "sub_question": "This helps us tailor recommendations to your goals.",
+      "footer": "",
+      "sub_footer": "",
       "type": "multiple_choice",
       "selection_type": "multiple",
       "question": "What are your primary goals?",
@@ -259,10 +419,20 @@
     },
     {
       "id": "additional_data",
+      "name": "Additional Data",
+      "header": "Additional Information",
+      "sub_question": "This helps us provide more personalized recommendations.",
+      "footer": "",
+      "sub_footer": "",
       "type": "group",
       "questions": [
         {
           "id": "allergies",
+          "name": "Allergies",
+          "header": "Do you have any allergies?",
+          "sub_question": "This helps us avoid recommending products that might trigger allergies.",
+          "footer": "",
+          "sub_footer": "",
           "type": "multiple_choice",
           "selection_type": "multiple",
           "question": "Do you have any allergies?",
@@ -270,6 +440,11 @@
         },
         {
           "id": "pregnancy_breastfeeding",
+          "name": "Pregnancy or Breastfeeding",
+          "header": "Are you pregnant or breastfeeding?",
+          "sub_question": "This helps us provide safe recommendations for you and your baby.",
+          "footer": "",
+          "sub_footer": "",
           "type": "multiple_choice",
           "selection_type": "single",
           "question": "Are you pregnant or breastfeeding?",
@@ -277,6 +452,11 @@
         },
         {
           "id": "smoking_alcohol",
+          "name": "Smoking or Alcohol Consumption",
+          "header": "Do you smoke or consume alcohol?",
+          "sub_question": "This helps us understand your lifestyle habits.",
+          "footer": "",
+          "sub_footer": "",
           "type": "multiple_choice",
           "selection_type": "multiple",
           "question": "Do you smoke or consume alcohol?",
